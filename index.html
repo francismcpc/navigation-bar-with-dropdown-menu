@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Navigation Bar with Propdown Menu</title>
+  </head>
+  <body>
+    <header id="nav-menu" aria-label="navigation bar">
+      <div class="container">
+        <div class="nav-start">
+          <a class="logo" href="/">
+            <img src="/assets/logo.svg" alt="Inc Logo" />
+          </a>
+          <nav class="menu">
+            <ul class="menu-bar">
+              <li>
+                <button
+                  class="nav-link dropdown-btn"
+                  data-dropdown="dropdown1"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-label="browse"
+                >
+                  Features
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div id="dropdown1" class="dropdown">
+                  <ul role="menu">
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#best-of-the-day">
+                        <img src="./assets/icon-todo.svg" class="icon" />
+                        <div>
+                          <span class="dropdown-link-title">Todo List</span>
+                          <p>Stay organized</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#featured-streams">
+                        <img src="./assets/icon-calendar.svg" class="icon" />
+                        <div>
+                          <span class="dropdown-link-title">Calendar</span>
+                          <p>Discover scheduled livestreams</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#subscriptions">
+                        <img src="./assets/icon-reminders.svg" class="icon" />
+                        <div>
+                          <span class="dropdown-link-title">Reminders</span>
+                          <p>Get exclusive notified</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#creative-feed">
+                        <img src="./assets/icon-planning.svg" class="icon" />
+                        <div>
+                          <span class="dropdown-link-title">Planning</span>
+                          <p>Plan your creative journey</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <ul role="menu">
+                    <li class="dropdown-title">
+                      <span class="dropdown-link-title">Browse by apps</span>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#adobe-xd">
+                        <img src="./assets/icons/xd.svg" />
+                        Adobe XD
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#after-effect">
+                        <img src="./assets/icons/ae.svg" />
+                        After Effect
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#sketch">
+                        <img src="./assets/icons/sketch.svg" />
+                        Sketch
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#indesign">
+                        <img src="./assets/icons/indesign.svg" />
+                        Indesign
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#figma">
+                        <img src="./assets/icons/figma.svg" />
+                        Figma
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <button
+                  class="nav-link dropdown-btn"
+                  data-dropdown="dropdown2"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-label="discover"
+                >
+                  Company
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div id="dropdown2" class="dropdown">
+                  <ul role="menu">
+                    <li>
+                      <span class="dropdown-link-title">Browse Categories</span>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#branding">History</a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#illustrations"
+                        >Our Team</a
+                      >
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#illustrations">Blog</a>
+                    </li>
+                  </ul>
+                  <ul role="menu">
+                    <li>
+                      <span class="dropdown-link-title">Download App</span>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#mac-windows"
+                        >MacOS & Windows</a
+                      >
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#linux">Linux</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li><a class="nav-link" href="/">Careers</a></li>
+              <li><a class="nav-link" href="/">About</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="nav-end">
+          <div class="right-container">
+            <button class="btn btn-text">Login</button>
+            <button class="btn btn-outline">Register</button>
+          </div>
+
+          <button
+            id="hamburger"
+            aria-label="hamburger"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <img src="/assets/menu.png" id="hamburgerCloseBtn" alt="" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h1 class="hero-title">Make remote work</h1>
+          <p class="hero-subtitle">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="btn btn-primary">Learn more</button>
+          <div class="hero-brand">
+            <img src="/assets/client-databiz.svg" alt="" />
+            <img src="/assets/client-audiophile.svg" alt="" />
+            <img src="/assets/client-meet.svg" alt="" />
+            <img src="/assets/client-maker.svg" alt="" />
+          </div>
+        </div>
+        <div class="hero-image">
+          <picture>
+            <source
+              srcset="/assets/image-hero-mobile.png"
+              media="(max-width: 1099px)"
+            />
+            <source
+              srcset="/assets/image-hero-desktop.png"
+              media="(min-width: 1100px)"
+            />
+            <img
+              src="/assets/image-hero-desktop.png"
+              alt="image-hero-desktop"
+              width="500"
+            />
+          </picture>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
